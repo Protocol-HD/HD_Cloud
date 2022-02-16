@@ -59,6 +59,7 @@ a {
     list-style: none;
     float: right;
     margin: 0;
+    padding: 0;
 }
 
 .menuItem {
@@ -184,7 +185,7 @@ a {
 }
 
 .tableEmail {
-    width: 40%;
+    width: 35%;
 }
 
 .tableYear {
@@ -193,7 +194,7 @@ a {
 
 .tableButton {
     text-align: center;
-    width: 10%;
+    width: 15%;
 }
 
 .editInputBox {
@@ -349,4 +350,58 @@ a {
 
 #mainImg {
     width: 800px;
+}
+
+@media screen and (max-width: 768px){
+    .clientTable * {
+        font-size: 0.7rem;
+        overflow: hidden;
+    }
+
+    .menuItem {
+        font-size: 0.8rem;
+        margin-right: 10px;
+    }
+
+    .menuItem:hover {
+        font-size: 0.8rem;
+    }
+
+    .searchBox * {
+        font-size: 0.8rem;
+    }
+
+    .editButton {
+        padding: 10px 5px;
+        margin-right: 0;
+    }
+
+    .editButton:hover {
+        font-size: 0.7rem;
+    }
+
+    .deleteButton {
+        padding: 10px 5px;
+    }
+
+    .deleteButton:hover {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .editButton {
+        padding: 2px;
+    }
+
+    .deleteButton {
+        padding: 2px;
+    }
+
+    .menuItem {
+        width: 40px;
+        height: 60px;
+        margin: 0;
+        overflow: hidden;
+    }
 }
